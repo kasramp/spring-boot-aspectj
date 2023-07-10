@@ -5,17 +5,17 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>3.1.1</version>
+        <relativePath/>
     </parent>
     <groupId>com.madadipouya.sample</groupId>
     <artifactId>aspectj</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>spring-boot-aspectj</name>
     <description>Spring Boot example with AspectJ</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -34,17 +34,17 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>5.2.5.RELEASE</version>
+            <version>6.0.10</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
-            <version>1.9.5</version>
+            <version>1.9.19</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.9.5</version>
+            <version>1.9.19</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -57,6 +57,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.24.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -65,13 +71,13 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>com.nickwongdev</groupId>
+                <groupId>dev.aspectj</groupId>
                 <artifactId>aspectj-maven-plugin</artifactId>
-                <version>1.12.6</version>
+                <version>1.13.1</version>
                 <configuration>
-                    <complianceLevel>11</complianceLevel>
-                    <source>11</source>
-                    <target>11</target>
+                    <complianceLevel>17</complianceLevel>
+                    <source>17</source>
+                    <target>17</target>
                     <showWeaveInfo>true</showWeaveInfo>
                     <verbose>true</verbose>
                     <Xlint>ignore</Xlint>
