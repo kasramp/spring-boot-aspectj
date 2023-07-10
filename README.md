@@ -1,12 +1,10 @@
-# Sample Spring Boot with AspectJ
+# Spring Boot 3 + AspectJ example
 
-Sample Spring Boot project with AspectJ configured.
-
-With AspectJ we can apply `@Cacheable` and `@Transaction` to **private** methods. 
+Sample Spring Boot 3 project with AspectJ configured. With AspectJ we can apply `@Cacheable` and `@Transaction` to **private** methods. Works with JDK 17.
 
 Read this blog post for more details,
 
--  [How to configure AspectJ in Spring Boot](https://www.geekyhacker.com/2020/03/28/how-to-configure-aspectj-in-spring-boot/)
+-  [How to configure AspectJ in Spring Boot](https://www.geekyhacker.com/how-to-configure-aspectj-in-spring-boot/)
 
 ## How to run
 
